@@ -1,0 +1,607 @@
+<html>
+<title>conversational lojban</title>
+<style type="text/css">
+    body,
+    td {
+        color: black;
+        background-color: white;
+        font-family: verdana;
+        font-size: 10pt;
+    }
+
+    .lojban,
+    .lojban-a,
+    .lojban-b {
+        color: #006600;
+        font-family: courier;
+    }
+
+    div {
+        border: solid silver 1px;
+        padding: 5px;
+    }
+
+    .answer {
+        border: solid black 1px;
+        background-color: green;
+        color: green;
+        font-weight: bold;
+        margin: 2px;
+        padding: 2px;
+    }
+
+    .lojban-a {
+        color: #000099;
+    }
+
+    .lojban-b {
+        color: #ff3333;
+    }
+</style>
+
+<body>
+    <h3>conversational lojban</h3>
+    <table width="450" align="center">
+        <tr>
+            <td valign="top">
+                <div id="card_0" style="display:none"><span class="lojban">lojbo terctuca pamoi</span> <i>lojban lesson
+                        one</i>
+                    <br />&nbsp;<br />This is a lesson in conversational lojban. In this
+                    <br />lesson, you will learn by reading actual lojban
+                    <br />and answering simple questions about the text.
+                    <br />&nbsp;<br /><b>Use the space bar or 'Enter' key to progress</b><br /><b>through the
+                        lesson.</b><br />&nbsp;<br /><br /><button id="button_0" onclick="{
+                  // first try to show the answer..
+                  var nextpage=true;
+                  try {
+                      if (document.all['answer_0'].style.color!='white') {
+                          document.all['answer_0'].style.color='white';
+                          nextpage=false;
+                      }
+                  } catch(e) {}
+               
+                  // otherwise, just turn the page:
+                  if (nextpage) {
+                      document.all['card_0'].style.display='none';
+                      document.all['card_1'].style.display='block';
+                      try {
+                          document.all['button_1'].focus();
+                      } catch(e) {}
+                  }
+               }" />&gt;&gt;</button>
+                </div>
+                <div id="card_1" style="display:none">Imagine you are walking down the street, and see your friend
+                    <br />Martha approaching. The following conversation ensues:
+                    <br />&nbsp;<br /><span class="lojban-a">coi. martas.</span>
+                    <br /><span class="lojban-b">coi .i co'o</span>
+                    <br /><span class="lojban-a">.i do klama ma</span>
+                    <br /><span class="lojban-b">.i mi klama le zarci</span>
+                    <br /><span class="lojban-a">.i co'o</span>
+                    <br /><span class="lojban-b">.i co'o</span>
+                    <br /><br /><button id="button_1" onclick="{
+                  // first try to show the answer..
+                  var nextpage=true;
+                  try {
+                      if (document.all['answer_1'].style.color!='white') {
+                          document.all['answer_1'].style.color='white';
+                          nextpage=false;
+                      }
+                  } catch(e) {}
+               
+                  // otherwise, just turn the page:
+                  if (nextpage) {
+                      document.all['card_1'].style.display='none';
+                      document.all['card_2'].style.display='block';
+                      try {
+                          document.all['button_2'].focus();
+                      } catch(e) {}
+                  }
+               }" />&gt;&gt;</button>
+                </div>
+                <div id="card_2" style="display:none">Let's take a closer look at the conversation, step by step.
+                    <br />&nbsp;<br />You begin by greeting Martha:
+                    <br />&nbsp;<br /><span class="lojban-a">coi. martas</span>
+                    <br />&nbsp;<br />Note that this is pronounced /shoy martas/.
+                    <br />&nbsp;<br /><b>Can you guess the lojban word for "hello"?</b><br />
+                    <p class="answer" id="answer_2">coi </p><br /><button id="button_2" onclick="{
+                  // first try to show the answer..
+                  var nextpage=true;
+                  try {
+                      if (document.all['answer_2'].style.color!='white') {
+                          document.all['answer_2'].style.color='white';
+                          nextpage=false;
+                      }
+                  } catch(e) {}
+               
+                  // otherwise, just turn the page:
+                  if (nextpage) {
+                      document.all['card_2'].style.display='none';
+                      document.all['card_3'].style.display='block';
+                      try {
+                          document.all['button_3'].focus();
+                      } catch(e) {}
+                  }
+               }" />&gt;&gt;</button>
+                </div>
+                <div id="card_3" style="display:none">Names, called <span class="lojban">cmene</span> in lojban, must
+                    always end in
+                    <br />a consonant. Since "Martha" ends with a vowel, we
+                    <br />add an extra letter - usually an "s" or an "n" to
+                    <br />the end of her name. Since lojban has no sound for
+                    <br />"th", we instead use a simple "t".
+                    <br />&nbsp;<br /><b>How do you say "Martha" in lojban?</b><br />
+                    <p class="answer" id="answer_3">martas</p><br /><button id="button_3" onclick="{
+                  // first try to show the answer..
+                  var nextpage=true;
+                  try {
+                      if (document.all['answer_3'].style.color!='white') {
+                          document.all['answer_3'].style.color='white';
+                          nextpage=false;
+                      }
+                  } catch(e) {}
+               
+                  // otherwise, just turn the page:
+                  if (nextpage) {
+                      document.all['card_3'].style.display='none';
+                      document.all['card_4'].style.display='block';
+                      try {
+                          document.all['button_4'].focus();
+                      } catch(e) {}
+                  }
+               }" />&gt;&gt;</button>
+                </div>
+                <div id="card_4" style="display:none">Names also require a short, mandatory pause at the end,
+                    <br />to keep them from running into the next word. In lojban,
+                    <br />we write the pause as: "."
+                    <br />&nbsp;<br />The word <span class="lojban">coi</span> also requires a pause at the end when
+                    <br />used before <span class="lojban">cmene</span>.
+                    <br />&nbsp;<br /><b>How do you say "hello, martha" in lojban?</b><br />
+                    <p class="answer" id="answer_4">coi. martas.</p><br /><button id="button_4" onclick="{
+                  // first try to show the answer..
+                  var nextpage=true;
+                  try {
+                      if (document.all['answer_4'].style.color!='white') {
+                          document.all['answer_4'].style.color='white';
+                          nextpage=false;
+                      }
+                  } catch(e) {}
+               
+                  // otherwise, just turn the page:
+                  if (nextpage) {
+                      document.all['card_4'].style.display='none';
+                      document.all['card_5'].style.display='block';
+                      try {
+                          document.all['button_5'].focus();
+                      } catch(e) {}
+                  }
+               }" />&gt;&gt;</button>
+                </div>
+                <div id="card_5" style="display:none">Note that "." does not signify the end of a sentence,
+                    <br />as it does in English.
+                    <br />&nbsp;<br />In lojban, punctuation marks are replaced by short words
+                    <br />that are actually spoken. Lojban sentences are separated
+                    <br />by the word <span class="lojban">.i</span>, which sounds like the long "E" sound
+                    <br />in the English word "see".
+                    <br />&nbsp;<br /><span class="lojban">.i</span> also sounds like the Spanish word "y", which
+                    <br />means "and". Saying <span class="lojban">.i</span> is something like saying "and"
+                    <br />between sentences to form an English run-on.
+                    <br /><br /><button id="button_5" onclick="{
+                  // first try to show the answer..
+                  var nextpage=true;
+                  try {
+                      if (document.all['answer_5'].style.color!='white') {
+                          document.all['answer_5'].style.color='white';
+                          nextpage=false;
+                      }
+                  } catch(e) {}
+               
+                  // otherwise, just turn the page:
+                  if (nextpage) {
+                      document.all['card_5'].style.display='none';
+                      document.all['card_6'].style.display='block';
+                      try {
+                          document.all['button_6'].focus();
+                      } catch(e) {}
+                  }
+               }" />&gt;&gt;</button>
+                </div>
+                <div id="card_6" style="display:none">Martha says:
+                    <br />&nbsp;<br /><span class="lojban-b">coi .i co'o</span>
+                    <br />&nbsp;<br />It means, "hello! goodbye!"
+                    <br />&nbsp;<br /><b> What is the lojban word for goodbye?</b><br />
+                    <p class="answer" id="answer_6"> co'o</p><br /><button id="button_6" onclick="{
+                  // first try to show the answer..
+                  var nextpage=true;
+                  try {
+                      if (document.all['answer_6'].style.color!='white') {
+                          document.all['answer_6'].style.color='white';
+                          nextpage=false;
+                      }
+                  } catch(e) {}
+               
+                  // otherwise, just turn the page:
+                  if (nextpage) {
+                      document.all['card_6'].style.display='none';
+                      document.all['card_7'].style.display='block';
+                      try {
+                          document.all['button_7'].focus();
+                      } catch(e) {}
+                  }
+               }" />&gt;&gt;</button>
+                </div>
+                <div id="card_7" style="display:none">The apostrophe in <span class="lojban">co'o</span> is an actual
+                    lojban letter. It
+                    <br />sounds like the English letter, "h" and is used to keep
+                    <br />vowels from running together.
+                    <br />&nbsp;<br /><b> How do you tell Martha goodbye?</b><br />
+                    <p class="answer" id="answer_7"> co'o. martas.</p><br /><button id="button_7" onclick="{
+                  // first try to show the answer..
+                  var nextpage=true;
+                  try {
+                      if (document.all['answer_7'].style.color!='white') {
+                          document.all['answer_7'].style.color='white';
+                          nextpage=false;
+                      }
+                  } catch(e) {}
+               
+                  // otherwise, just turn the page:
+                  if (nextpage) {
+                      document.all['card_7'].style.display='none';
+                      document.all['card_8'].style.display='block';
+                      try {
+                          document.all['button_8'].focus();
+                      } catch(e) {}
+                  }
+               }" />&gt;&gt;</button>
+                </div>
+                <div id="card_8" style="display:none">Now we get to a simple lojban question. In the example,
+                    <br />you told Martha hello, and she says <span class="lojban">coi .i co'o</span>
+                    <br />"hello! goodbye!". You then ask her where she's
+                    <br />going:
+                    <br />&nbsp;<br /><span class="lojban-b">.i do klama ma</span>
+                    <br />&nbsp;<br /><b> How do you ask, "where are you going?" in lojban?</b><br />
+                    <p class="answer" id="answer_8"> do klama ma</p><br /><button id="button_8" onclick="{
+                  // first try to show the answer..
+                  var nextpage=true;
+                  try {
+                      if (document.all['answer_8'].style.color!='white') {
+                          document.all['answer_8'].style.color='white';
+                          nextpage=false;
+                      }
+                  } catch(e) {}
+               
+                  // otherwise, just turn the page:
+                  if (nextpage) {
+                      document.all['card_8'].style.display='none';
+                      document.all['card_9'].style.display='block';
+                      try {
+                          document.all['button_9'].focus();
+                      } catch(e) {}
+                  }
+               }" />&gt;&gt;</button>
+                </div>
+                <div id="card_9" style="display:none">Let's take a closer look at <span class="lojban">do klama
+                        ma</span>.
+                    <br />&nbsp;<br />A word for word translation might be something like:
+                    <br /><i>you go fill-in-the-blank</i>
+                    <br />&nbsp;<br /><b>which lojban word represents "go"?</b><br />
+                    <p class="answer" id="answer_9">klama</p><br /><button id="button_9" onclick="{
+                  // first try to show the answer..
+                  var nextpage=true;
+                  try {
+                      if (document.all['answer_9'].style.color!='white') {
+                          document.all['answer_9'].style.color='white';
+                          nextpage=false;
+                      }
+                  } catch(e) {}
+               
+                  // otherwise, just turn the page:
+                  if (nextpage) {
+                      document.all['card_9'].style.display='none';
+                      document.all['card_10'].style.display='block';
+                      try {
+                          document.all['button_10'].focus();
+                      } catch(e) {}
+                  }
+               }" />&gt;&gt;</button>
+                </div>
+                <div id="card_10" style="display:none">The lojban <span class="lojban">klama</span> roughly corresponds
+                    to the English "go",
+                    <br />but <span class="lojban">klama</span> isn't a verb. Rather, <span class="lojban">klama</span>
+                    represents a
+                    <br />relationship between various things. The full definition of
+                    <br /><span class="lojban">klama</span> is:
+                    <br />&nbsp;<br /><i>x1 comes/goes to destination x2 from origin x3
+                        <br />via route x4 using means/vehicle x5</i>
+                    <br />&nbsp;<br />The lojban question, <span class="lojban">do klama ma</span> really means:
+                    <br />&nbsp;<br /><i>you go where from somewhere via somewhere using something?</i>
+                    <br />&nbsp;<br />Generally, the most important relationship-parts (called <span
+                        class="lojban">sumti</span>)
+                    <br />come first. Since these <span class="lojban">sumti</span> often correspond to subjects
+                    <br />and objects in English sentences, <span class="lojban">klama</span> acts like an English verb.
+                    <br />&nbsp;<br /><b> How would you say "you go" in lojban?</b><br />
+                    <p class="answer" id="answer_10"> do klama</p><br /><button id="button_10" onclick="{
+                  // first try to show the answer..
+                  var nextpage=true;
+                  try {
+                      if (document.all['answer_10'].style.color!='white') {
+                          document.all['answer_10'].style.color='white';
+                          nextpage=false;
+                      }
+                  } catch(e) {}
+               
+                  // otherwise, just turn the page:
+                  if (nextpage) {
+                      document.all['card_10'].style.display='none';
+                      document.all['card_11'].style.display='block';
+                      try {
+                          document.all['button_11'].focus();
+                      } catch(e) {}
+                  }
+               }" />&gt;&gt;</button>
+                </div>
+                <div id="card_11" style="display:none">The question word <span class="lojban">ma</span> is a request for
+                    the listener to
+                    <br />"fill in the blank".
+                    <br />&nbsp;<br />Depending on context, <span class="lojban">ma</span> could mean "who?", "what?",
+                    <br />"when?", "where?", "why?" or "how?"
+                    <br />&nbsp;<br /><b> How would you ask "who's going?" in lojban?</b><br />
+                    <p class="answer" id="answer_11"> ma klama</p><br /><button id="button_11" onclick="{
+                  // first try to show the answer..
+                  var nextpage=true;
+                  try {
+                      if (document.all['answer_11'].style.color!='white') {
+                          document.all['answer_11'].style.color='white';
+                          nextpage=false;
+                      }
+                  } catch(e) {}
+               
+                  // otherwise, just turn the page:
+                  if (nextpage) {
+                      document.all['card_11'].style.display='none';
+                      document.all['card_12'].style.display='block';
+                      try {
+                          document.all['button_12'].focus();
+                      } catch(e) {}
+                  }
+               }" />&gt;&gt;</button>
+                </div>
+                <div id="card_12" style="display:none">When you ask Martha, <span class="lojban-a">do klama ma</span>,
+                    she responds:
+                    <br />&nbsp;<br /><span class="lojban-b">.i mi klama le zarci</span>
+                    <br />&nbsp;<br />She says she is going to the store.
+                    <br />&nbsp;<br /><b> How do you say "I" or "me" in lojban?</b><br />
+                    <p class="answer" id="answer_12"> mi</p><br /><button id="button_12" onclick="{
+                  // first try to show the answer..
+                  var nextpage=true;
+                  try {
+                      if (document.all['answer_12'].style.color!='white') {
+                          document.all['answer_12'].style.color='white';
+                          nextpage=false;
+                      }
+                  } catch(e) {}
+               
+                  // otherwise, just turn the page:
+                  if (nextpage) {
+                      document.all['card_12'].style.display='none';
+                      document.all['card_13'].style.display='block';
+                      try {
+                          document.all['button_13'].focus();
+                      } catch(e) {}
+                  }
+               }" />&gt;&gt;</button>
+                </div>
+                <div id="card_13" style="display:none">Martha said:
+                    <br />&nbsp;<br /><span class="lojban-b">.i mi klama le zarci</span>
+                    <br />&nbsp;<br /><b> say "the store" in lojban.</b><br />
+                    <p class="answer" id="answer_13"> le zarci</p><br /><button id="button_13" onclick="{
+                  // first try to show the answer..
+                  var nextpage=true;
+                  try {
+                      if (document.all['answer_13'].style.color!='white') {
+                          document.all['answer_13'].style.color='white';
+                          nextpage=false;
+                      }
+                  } catch(e) {}
+               
+                  // otherwise, just turn the page:
+                  if (nextpage) {
+                      document.all['card_13'].style.display='none';
+                      document.all['card_14'].style.display='block';
+                      try {
+                          document.all['button_14'].focus();
+                      } catch(e) {}
+                  }
+               }" />&gt;&gt;</button>
+                </div>
+                <div id="card_14" style="display:none">Let's review.
+                    <br /><b> Do you remember how to say "hello" in lojban?</b><br />
+                    <p class="answer" id="answer_14"> coi</p><br /><button id="button_14" onclick="{
+                  // first try to show the answer..
+                  var nextpage=true;
+                  try {
+                      if (document.all['answer_14'].style.color!='white') {
+                          document.all['answer_14'].style.color='white';
+                          nextpage=false;
+                      }
+                  } catch(e) {}
+               
+                  // otherwise, just turn the page:
+                  if (nextpage) {
+                      document.all['card_14'].style.display='none';
+                      document.all['card_15'].style.display='block';
+                      try {
+                          document.all['button_15'].focus();
+                      } catch(e) {}
+                  }
+               }" />&gt;&gt;</button>
+                </div>
+                <div id="card_15" style="display:none"><b> Do you remember how to say "goodbye"?</b><br />
+                    <p class="answer" id="answer_15"> co'o</p><br /><button id="button_15" onclick="{
+                  // first try to show the answer..
+                  var nextpage=true;
+                  try {
+                      if (document.all['answer_15'].style.color!='white') {
+                          document.all['answer_15'].style.color='white';
+                          nextpage=false;
+                      }
+                  } catch(e) {}
+               
+                  // otherwise, just turn the page:
+                  if (nextpage) {
+                      document.all['card_15'].style.display='none';
+                      document.all['card_16'].style.display='block';
+                      try {
+                          document.all['button_16'].focus();
+                      } catch(e) {}
+                  }
+               }" />&gt;&gt;</button>
+                </div>
+                <div id="card_16" style="display:none"><b> Say "hello! goodbye!" in lojban.</b><br />
+                    <p class="answer" id="answer_16"> coi .i co'o</p><br /><button id="button_16" onclick="{
+                  // first try to show the answer..
+                  var nextpage=true;
+                  try {
+                      if (document.all['answer_16'].style.color!='white') {
+                          document.all['answer_16'].style.color='white';
+                          nextpage=false;
+                      }
+                  } catch(e) {}
+               
+                  // otherwise, just turn the page:
+                  if (nextpage) {
+                      document.all['card_16'].style.display='none';
+                      document.all['card_17'].style.display='block';
+                      try {
+                          document.all['button_17'].focus();
+                      } catch(e) {}
+                  }
+               }" />&gt;&gt;</button>
+                </div>
+                <div id="card_17" style="display:none"><b> How do you ask someone where they are going?</b><br />
+                    <p class="answer" id="answer_17"> do klama ma</p><br /><button id="button_17" onclick="{
+                  // first try to show the answer..
+                  var nextpage=true;
+                  try {
+                      if (document.all['answer_17'].style.color!='white') {
+                          document.all['answer_17'].style.color='white';
+                          nextpage=false;
+                      }
+                  } catch(e) {}
+               
+                  // otherwise, just turn the page:
+                  if (nextpage) {
+                      document.all['card_17'].style.display='none';
+                      document.all['card_18'].style.display='block';
+                      try {
+                          document.all['button_18'].focus();
+                      } catch(e) {}
+                  }
+               }" />&gt;&gt;</button>
+                </div>
+                <div id="card_18" style="display:none"><b> How do you ask "who's going to the store?"</b><br />
+                    <p class="answer" id="answer_18"> ma klama le zarci</p><br /><button id="button_18" onclick="{
+                  // first try to show the answer..
+                  var nextpage=true;
+                  try {
+                      if (document.all['answer_18'].style.color!='white') {
+                          document.all['answer_18'].style.color='white';
+                          nextpage=false;
+                      }
+                  } catch(e) {}
+               
+                  // otherwise, just turn the page:
+                  if (nextpage) {
+                      document.all['card_18'].style.display='none';
+                      document.all['card_19'].style.display='block';
+                      try {
+                          document.all['button_19'].focus();
+                      } catch(e) {}
+                  }
+               }" />&gt;&gt;</button>
+                </div>
+                <div id="card_19" style="display:none"><b> Answer yourself: "I'm going to the store"</b><br />
+                    <p class="answer" id="answer_19"> mi klama le zarci</p><br /><button id="button_19" onclick="{
+                  // first try to show the answer..
+                  var nextpage=true;
+                  try {
+                      if (document.all['answer_19'].style.color!='white') {
+                          document.all['answer_19'].style.color='white';
+                          nextpage=false;
+                      }
+                  } catch(e) {}
+               
+                  // otherwise, just turn the page:
+                  if (nextpage) {
+                      document.all['card_19'].style.display='none';
+                      document.all['card_20'].style.display='block';
+                      try {
+                          document.all['button_20'].focus();
+                      } catch(e) {}
+                  }
+               }" />&gt;&gt;</button>
+                </div>
+                <div id="card_20" style="display:none"><b> Ask, "where am I going"?</b><br />
+                    <p class="answer" id="answer_20"> mi klama ma</p><br /><button id="button_20" onclick="{
+                  // first try to show the answer..
+                  var nextpage=true;
+                  try {
+                      if (document.all['answer_20'].style.color!='white') {
+                          document.all['answer_20'].style.color='white';
+                          nextpage=false;
+                      }
+                  } catch(e) {}
+               
+                  // otherwise, just turn the page:
+                  if (nextpage) {
+                      document.all['card_20'].style.display='none';
+                      document.all['card_21'].style.display='block';
+                      try {
+                          document.all['button_21'].focus();
+                      } catch(e) {}
+                  }
+               }" />&gt;&gt;</button>
+                </div>
+                <div id="card_21" style="display:none">You should now be able to understand the conversation
+                    <br />that started this lesson.
+                    <br />&nbsp;<br /><span class="lojban-a">coi. martas.</span>
+                    <br /><span class="lojban-b">coi .i co'o</span>
+                    <br /><span class="lojban-a">.i do klama ma</span>
+                    <br /><span class="lojban-b">.i mi klama le zarci</span>
+                    <br /><span class="lojban-a">.i co'o</span>
+                    <br /><span class="lojban-b">.i co'o</span>
+                    <br /><br /><button id="button_21" onclick="{
+                  // first try to show the answer..
+                  var nextpage=true;
+                  try {
+                      if (document.all['answer_21'].style.color!='white') {
+                          document.all['answer_21'].style.color='white';
+                          nextpage=false;
+                      }
+                  } catch(e) {}
+               
+                  // otherwise, just turn the page:
+                  if (nextpage) {
+                      document.all['card_21'].style.display='none';
+                      document.all['card_22'].style.display='block';
+                      try {
+                          document.all['button_22'].focus();
+                      } catch(e) {}
+                  }
+               }" />&gt;&gt;</button>
+                </div>
+                <div id="card_22" style="display:none">This concludes lesson one.
+                    <br />&nbsp;<br /><span class="lojban">co'o do</span>
+                    <br /><br />
+                </div>
+
+            </td>
+        </tr>
+    </table>
+    <script language="javascript">
+        document.all['card_0'].style.display = 'block';
+        document.all['button_0'].focus();
+    </script>
+</body>
+
+</html>
