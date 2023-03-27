@@ -1,0 +1,29 @@
+#my-player-wrapper {
+  position: relative;
+  height: 400px;
+  width: 550px;
+  margin: auto;
+}
+
+.common {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#my-player-loading {
+  z-index: 1;
+}
+
+#my-player-loading img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#my-player {
+  z-index: 2;
+}

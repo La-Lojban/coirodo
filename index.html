@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>coi rodo</title>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle/ruffle.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body style="background-color: #FFFFFF">
+    <div style="text-align: center">
+      <!-- URL's used in the movie-->
+      <!-- text used in the movie-->
+      <!--coi   rodo mlatu gerku tricu pa gerku re gerku ci gerku pa finpe re finpe xunre finpe blanu finpe re blanu finpe re xunre finpe ci finpe -->
+      <div id="my-player-wrapper">
+        <div id="my-player-loading" class="common"><img src="./loading.gif" alt="" /></div>
+        <div id="my-player" class="common"></div>
+      </div>
+
+      <pre>cmalu lojbo prosa</pre>
+      <p>a little lojban book</p>
+      <p>see also <a href="./english/">lojban lessons in english</a></p>
+    </div>
+
+    <script>
+      window.RufflePlayer = window.RufflePlayer || {};
+      window.addEventListener("load", (event) => {
+        const ruffle = window.RufflePlayer.newest();
+        const player = ruffle.createPlayer();
+        const container = document.getElementById("my-player");
+        const wrapper = document.getElementById("my-player-wrapper");
+        const wrapperInfo = wrapper.getBoundingClientRect();
+        container.appendChild(player);
+        container.style.width = player.style.width;
+        container.style.height = player.style.height;
+        player.load("coirodo.swf");
+      });
+    </script>
+  </body>
+</html>

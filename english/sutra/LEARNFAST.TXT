@@ -1,0 +1,118 @@
+================================================
+[0915.2002]         LEARNFAST
+================================================
+by Michal Wallace        http://sabren.net/code/
+================================================
+
+OVERVIEW
+--------
+
+LearnFast is a flashcard program for learning languages, 
+especially the constructed language Lojban. LearnFast
+attempts to apply the best practices available for
+teaching language. It also uses the Lojban word 
+frequency database to teach the most common words first.
+
+In the first half of a session (training), LearnFast plays
+classical music and presents you with english meanings, 
+followed by the lojban translation, which is also said out
+loud. The words repeat in an order designed to keep them
+in short-term memory. Learnfast presents 64 cards each 
+lesson, and takes about 15 minutes.
+
+<NOT IMPLEMENTED YET>
+The second half of the session (testing) asks you to 
+type lojban words for specific English meanings. These
+drills use a "ladder" system to test how well you know
+each word. The better you get at recalling a word, the
+higher it moves up the ladder. Trouble words are 
+reviewed in the next training session, along with
+new words to replace the ones that have already 
+been mastered.
+</NOT IMPLEMENTED YET>
+
+
+LINKS
+-----
+LearnFast requires:
+
+    python: http://www.python.org/
+    pygame: http://www.pygame.org/
+
+If you want to record your own words, you need
+the Snack sound toolkit:
+
+    http://www.speech.kth.se/snack/
+
+The main Lojban site is:
+
+    http://www.lojban.org/
+   
+
+THEORY
+------
+LearnFast combines ideas from three methods of
+language learning to help students learn new words
+as quickly as possible:
+
+
+  SUPERLEARNING (SUGGESTOPEDIA):
+     A system developed in Russia during
+     the cold war. Basically it involves 
+     presenting words in a certain rhythm
+     while a specific type of baroque music
+     plays.
+
+     The superlearning method involves
+     passive listening, followed by an
+     "activation session". 
+
+     Learnfast does not follow the superlearning
+     method exactly, though: passive listening is 
+     replaced by the principle of anticipation:
+     
+
+  GRADUATED INTERVAL RECALL and ANTICIPATION
+     These terms come from the Paul Pimsleur,
+     whose tapesets are considered some of the
+     best for language learning. (They're the
+     best *I've* heard, anyway)
+
+     Graduated Interval Recall just means that
+     LearnFast tells you the word, waits a
+     couple seconds, and then reminds you.
+     A little while later, it reminds you 
+     again, and so on, with the interval getting
+     longer and longer. This has to do with the
+     way our short term memory works. The goal 
+     is to remind students of a word before it
+     drops out of their short term memory
+     completely. Each time it's recalled, it
+     stays in memory longer.
+
+     Anticipation means that you're likely to
+     remember something if you're looking for
+     it when you encounter it. LearnFast prompts
+     you with the English translation of the word.
+     Either you know the lojban word or you don't.
+     But if you don't, it's shown a second later,
+     just as you're trying to remember.
+
+  LOGFLASH 
+     This is an older program for teaching lojban
+     words. It's got a really good concept, but
+     the interface is somewhat old. Also, the 
+     words seem to be taught in random order, 
+     and you are tested on words before you are
+     exposed to them.
+
+     LearnFast corrects these problems by teaching
+     the most common words first, and by putting the
+     testing session AFTER an audio/visual training 
+     session.
+      
+     Finally, Logflash focuses first on recognition -
+     showing you the Lojban word, asking for the English.
+     LearnFast focuses on recall - showing you the 
+     English meaning, and asking for the Lojban word.
+
